@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Website Layout</title>
+
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .content {
+      flex: 1;
+      padding: 40px;
+      padding-left: 7%;
+    
+    }
+    
+    
+    .content-right {
+      text-align: left;
+      line-height: 25px;
+      padding-right: 25px;
+      margin-left: 10%;
+    }
+
+    .content-L-2{
+      text-align: left;
+   }
+
+   .content-R-2{
+      padding-left: 10%;
+      line-height: 25px;
+    }
+
+
+
+    .button{
+        height: 40px;
+        width: 120px;
+        background-color: #1E5EE5;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        text-align: center;
+        
+        
+    }
+
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+    #photo2{
+        max-width: 110%;
+        margin-left: -40px;
+    }
+
+  
+
+
+   .container-bottom{
+    position: relative;
+    font-size: 25px;
+    height: 150px;
+    background-color: #403595;
+    color: white;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+    border-radius: 20px 20px 1px 1px;
+    
+   }
+
+   .text{
+      text-align: center;
+      margin-right: 20px;
+   }
+
+   .btn{
+     margin-left: 100px;
+     background-color: white;
+     position: relative;
+     color: black;
+     font-weight: 540;
+     width: 160px;
+   }
+
+   .btn::before {
+      content: "\2192";
+      position: absolute;
+      top: 45%;
+      right: 5px;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+    
+      .content {
+        
+        padding: 20px;
+      }
+    
+      .content-left,
+      .content-L-2 {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    
+      .content-R-2 {
+        padding-left: 12px;
+        margin-left: 50px;
+
+      }
+    
+      #photo2 {
+        max-width: 100%;
+        margin-left: 0;
+      }
+
+      .container-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .container-bottom .text {
+        margin-bottom: 10px;
+      }
+      
+      .container-bottom .btn {
+        margin-left: 0;
+      }
+
+      #mirror{
+        max-width: 75%;
+      }
+
+      
+    }
+  </style>
+</head>
+<body>
+
+    <!---1st section---->
+  <div class="container">
+    <div class="content content-left">
+        <img class="gif" src="./main_assets/1.gif" alt="Image">
+    </div>
+
+    <div class="content content-right">
+        <h1>DESIGNS</h1>
+        <p>Our digital marketing company excels in stunning design for <br> captivating online experiences. <br> Let us bring your vision to life !</p>
+        <button class="button">Learn more</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <img id="mirror" src="./main_assets/pseudo.png">
+  </div>
+
+
+  <!------2nd section-->
+  <div class="container">
+    <div class="content content-R-2" id="right">
+        <h1>DEVELOPMENT</h1>
+        <p>Our development expertise empowers cutting
+            edge solutions for seamless user experiences. <br>
+            Trust us to bring your digital vision to reality.</p>
+        <button class="button">Learn more</button>
+      
+    </div>
+    
+    <div class="content content-L-2">
+        <img src="./main_assets/photo2.png" alt="Image" id="photo2">
+        
+    </div>
+  </div>
+  
+  <div class="container">
+    <img id="mirror" src="./main_assets/pseudo_!.png">
+  </div>
+  
+
+  <!-----Third Section-->
+  <div class="container">
+    <div class="content content-left">
+        <img src="./main_assets/3.gif" alt="Image">
+      
+    </div>
+
+    <div class="content content-right">
+        <h1>SECURITY</h1>
+        <p>We prioritize robust security measures for safeguarding your <br>digital assets. <br>Trust us to protect your online presence with top-notch security.</p>
+        <button class="button">Learn more</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <img id="mirror" src="./main_assets/pseudo.png">
+  </div>
+
+
+  <!-----Fourth Section-->
+  <div class="container">
+    <div class="content content-R-2">
+        <h1>DIGITAL MARKETING</h1>
+        <p>Our branding expertise creates unique identities that resonate with audiences, 
+          elevating your brand's visibility and recognition.<br> 
+          Let us shape your brand's story with creativity and strategy.</p>
+        <button class="button">Learn more</button>
+      
+    </div>
+    
+    <div class="content content-L-2">
+        <img src="./main_assets/digital_marketing_team_with_laptops_light_bulb_marketing_team_metrics 1 1.png" alt="Image" id="photo2">
+        
+    </div>
+
+  </div>
+
+  <div class="container-bottom">
+    <div class="text">
+    <p>We create world-class web <br>design & branding</p>
+    </div>
+    <button class="button btn" >See More Works</button>
+  </div>
+  
+</body>
+</html>
